@@ -1,0 +1,48 @@
+
+.lunbotu {
+  display: flex;
+  justify-content: center;
+  height: 180px;
+}
+
+.geduan {
+  width: 100%;
+  height: 10px;
+  background: #F8F5F5;
+}
+
+/* ----内容---- */
+.classtitle {
+  display: flex;
+  justify-content: space-between;
+  margin:0px 0 0 0;
+  padding: 10px 5px 10px 5px;
+  background: #F8F5F5;
+}
+
+.classtitle view:nth-child(1) {  
+  font-size: 14px;
+}
+
+.classtitle view:nth-child(2) {
+  color:#C2C4C9;  
+  font-size: 14px;
+}
+
+.musicitem view {
+  font-size: 13px;
+  width: 150px;
+  height: 38px;
+  padding-left: 5px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content image {
+  width: 155px;
+  height: 150px;
+}

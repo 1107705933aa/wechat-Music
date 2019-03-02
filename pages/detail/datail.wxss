@@ -1,0 +1,14 @@
+
+.songitem {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.title {
+  font-size: 15px;
+}
+
+.name {
+  color: #666;
+  font-size: 13px;
+}

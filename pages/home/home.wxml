@@ -1,0 +1,30 @@
+
+<!-- 来个轮播图 -->
+<swiper class='lunbotu' autoplay='true' interval='3000' indicator-dots='true' indicator-color='#C2C4C9' indicator-active-color='#fff'>
+  <swiper-item>
+    <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2681831047,353062505&fm=26&gp=0.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4034008118,411521455&fm=26&gp=0.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1248419577,2740047152&fm=26&gp=0.jpg'></image>
+  </swiper-item>
+</swiper>
+
+<view class='geduan'></view>
+
+<!-- 渲染数据 -->
+<view wx:for="{{ songlist }}" bindtap='more' class='wrap'>
+  <view class='classtitle'>
+    <view>{{ item.name }}</view>
+    <view data-type="{{ item.type }}" data-imgurl="{{ item.pic_s444 }}">查看更多></view>
+  </view>
+
+  <view class='content'>
+     <view class='musicitem' wx:for="{{ item.content }}" bindtap='moree' wx:for-item="items" data-type="{{ item.type }}" data-imgurl="{{ item.pic_s444 }}">
+       <image src='{{ items.pic_small }}'></image>
+       <view>{{ items.title }}</view>
+     </view>
+  </view>
+</view>

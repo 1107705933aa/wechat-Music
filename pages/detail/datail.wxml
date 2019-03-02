@@ -1,0 +1,7 @@
+<image src="{{ imgurl }}">
+</image>
+
+<view class='songitem' wx:for="{{ songlist }}" data-id="{{ item.song_id }}" bindtap='playSong' data-index="{{ index }}">
+  <view class='title'>{{ item.title }}</view>
+  <view class='name'>{{ item.author }}</view>
+</view>

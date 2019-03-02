@@ -1,0 +1,23 @@
+
+<view class="musicwrap">
+  <view class="circle1">
+    <view class="circle2">
+      <view class="circle3">
+        <image src="{{songInfo.pic_radio}}" animation="{{animationData}}"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="musicContorl">
+  <view class="pre">
+    <image src="/images/pre.png" bindtap='pre'></image>
+  </view>
+  
+  <view class="pre">
+    <image src="/images/start.png" hidden='{{isplay}}' bindtap="play"></image>
+    <image src="/images/stop.png" hidden='{{!isplay}}' bindtap="puase"></image>
+  </view>
+  <view class="next">
+    <image src="/images/next.png" bindtap="next"></image>
+  </view>
+</view>

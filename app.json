@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/detail/datail",
+    "pages/play/play"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#405CB1",
+    "navigationBarTitleText": "登 录",
+    "navigationBarTextStyle":"white"
+  }
+}
